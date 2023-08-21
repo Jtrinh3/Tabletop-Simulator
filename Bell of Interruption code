@@ -1,0 +1,32 @@
+function buttonPress(clicked_object, player_color)
+    if lockout == false then
+        local clicker = Player[player_color]
+        msg = clicker.steam_name
+        msg = msg .. " " .. clicked_object.getDescription()
+
+        broadcastToAll(msg, player_color)
+        self.AssetBundle.playTriggerEffect(0)
+
+        lockout = true
+        startLockoutTimer(0)
+    end
+end
+
+
+function onload()
+    self.createButton({
+        click_function = "buttonPress", function_owner = self, position={0,0.9,0}, scale={3,5,3}
+    })
+    lockout = false
+end
+
+
+function startLockoutTimer()
+    Timer.create({identifier=self.getGUID(), function_name='unlockLockout', delay=1})
+end
+
+
+function unlockLockout()
+    lockout = false
+end
+
