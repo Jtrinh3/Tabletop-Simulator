@@ -4,11 +4,13 @@ function onLoad(saved_data)
 	bannedCards = 
 		{
 		"dockside extortionist", 
-		"dark ritual",
 		"jeweled lotus", 
 		"mana vault", 
 		"mana crypt", 
-		"underworld breach"
+		"underworld breach",
+		"gaea's cradle",
+		"jeska's will",
+		"urza, lord high artificer"
 		}
 	deckDir=-1
 	if saved_data ~= "" then
@@ -75,17 +77,17 @@ end
 function onCollisionEnter(co)
 	nowt=os.time()
 	if prevt==nil then prevt=0 end
-		if nowt-prevt<1 then return end
-		prevt=nowt
-		deck = co.collision_object
-			if deck.type == "Deck" then
-			    --nTake= #bannedCards
-			    --nTaken=0
-			    for i,card in ipairs(deck.getObjects()) do
-			      cname=card.name:lower():gsub('%p','')
-				for j,cardName in ipairs(bannedCards) do	--For each name in the ban list
-				      if cname:match(cardName) then
-				        nTaken=nTaken+1
+	if nowt-prevt<1 then return end
+	prevt=nowt
+	deck = co.collision_object
+	if deck.type == "Deck" then
+		--nTake= #bannedCards
+		nTaken=0	
+		for i,card in ipairs(deck.getObjects()) do
+			cname=card.name:lower():gsub('%p','')
+			for j,cardName in ipairs(bannedCards) do	--For each name in the ban list
+				if cname:match(cardName) then
+					nTaken=nTaken+1
 				        rot=deck.getRotation()
 				        pos=deck.getPosition()
 				        rig=deck.getTransformRight()
@@ -96,9 +98,9 @@ function onCollisionEnter(co)
 					--get only 1 card
 				        --if nTaken==tonumber(nTake) then
 				        --	break
-				        end
-				      end
-			    end
+					end
+				 end
+			end
     Wait.time(function() deck.shuffle() end, 0.1, 5)
 
     self.destruct()
