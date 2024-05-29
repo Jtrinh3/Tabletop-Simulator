@@ -1,6 +1,15 @@
 --Idk who made this originally but im using bits and pieces from it.
 function onLoad(saved_data)
 	searchTerm = ''
+	bannedCards = 
+		{
+		"dockside extortionist", 
+		"dark ritual",
+		"jeweled lotus", 
+		"mana vault", 
+		"mana crypt", 
+		"underworld breach"
+		}
 	deckDir=-1
 	if saved_data ~= "" then
 		local loaded_data = JSON.decode(saved_data)
@@ -66,28 +75,30 @@ end
 function onCollisionEnter(co)
 	nowt=os.time()
 	if prevt==nil then prevt=0 end
-	if nowt-prevt<1 then return end
-	prevt=nowt
-	deck = co.collision_object
-	if deck.type == "Deck" then
-    nTake=1
-    nTaken=0
-    for i,card in ipairs(deck.getObjects()) do
-      cname=card.name:lower():gsub('%p','')
-      if cname:match(searchTerm) then
-        nTaken=nTaken+1
-        rot=deck.getRotation()
-        pos=deck.getPosition()
-        rig=deck.getTransformRight()
-        rot[3]=0
-        pos=pos+rig:scale(deckDir*2.4+deckDir*(nTaken-1)*1.5)
-        pos[2]=pos[2]+nTaken*0.1
-        deck.takeObject({index=i-nTaken,position=pos,rotation=rot})
-        if nTaken==tonumber(nTake) then
-          break
-        end
-      end
-    end
+		if nowt-prevt<1 then return end
+		prevt=nowt
+		deck = co.collision_object
+			if deck.type == "Deck" then
+			    --nTake= #bannedCards
+			    --nTaken=0
+			    for i,card in ipairs(deck.getObjects()) do
+			      cname=card.name:lower():gsub('%p','')
+				for j,cardName in ipairs(bannedCards) do	--For each name in the ban list
+				      if cname:match(cardName) then
+				        nTaken=nTaken+1
+				        rot=deck.getRotation()
+				        pos=deck.getPosition()
+				        rig=deck.getTransformRight()
+				        rot[3]=0
+				        pos=pos+rig:scale(deckDir*2.4+deckDir*(nTaken-1)*1.5)
+				        pos[2]=pos[2]+nTaken*0.1
+				        deck.takeObject({index=i-nTaken,position=pos,rotation=rot})
+					--get only 1 card
+				        --if nTaken==tonumber(nTake) then
+				        --	break
+				        end
+				      end
+			    end
     Wait.time(function() deck.shuffle() end, 0.1, 5)
 
     self.destruct()
