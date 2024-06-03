@@ -3,16 +3,49 @@ function onLoad(saved_data)
 	searchTerm = ''
 	bannedCards = 
 		{
-		"dockside extortionist", 
+		--colorless
+		"ashnod's altar",
+		"blasting station",
+		"grim monolith",
 		"jeweled lotus", 
 		"mana vault", 
-		"mana crypt", 
-		"underworld breach",
-		"gaea's cradle",
-		"jeska's will",
-		"cyclonic rift",
+		"mana crypt",
+		"phyrexian altar",
 		"the tabernacle at pendrell vale",
-		--Below are default commander bans
+		
+		--White
+		"cathar's crusade", --slow play
+		
+		--Blue
+		"cyclonic rift",
+		"expropriate",
+		"narset, parter of veils", --for same reason as leovold
+		"temporal manipulation",
+		"time stretch",
+		
+		--Black
+		"bolas's citadel",
+		"ad nauseam",
+		"demonic consultation",
+		"gravecrawler",
+		"reassembling skeleton",
+		"tainted pact",
+		"tergrid, god of fright", --I swear it's only ran with wheels
+		
+		--Red
+		"dockside extortionist",
+		"underworld breach",
+		"jeska's will",
+		
+		--Green
+		"gaea's cradle",
+		"scute swarm", --slow play
+		
+		--Multicolored
+		"sen triplet",
+		"time sieve",
+		
+		--Default commander bans
 		"ancestral recall",
 		"balance",
 		"biorhythm",
@@ -84,7 +117,7 @@ function onLoad(saved_data)
 		font_color={1,1,1,90},
 		color={0,0,0,0},
 	})
-	self.createInput({
+	self.createButton({
 		input_function='getSearch',
 		function_owner=self,
 		label='Banned!',
@@ -93,9 +126,9 @@ function onLoad(saved_data)
 		width=1900,
 		height=321,
 		font_size=300,
-		font_color={1,.3,.3,1/.75},
-		color={0,0,0,0.75},
-		tooltip='Commence the banninging',
+		font_color={1,.3,.3,1},
+		color=Color.Red
+		tooltip='Commence the banningning',
 		alignment=3
 	})
 end
