@@ -8,21 +8,25 @@ function onLoad(saved_data)
 		--colorless
 		"ashnod's altar",
 		"blasting station",
-		"jeweled lotus", 
+		"jeweled lotus",
+		"lion's eye diamond",
 		"mana vault", 
 		"mana crypt",
+		"mox diamond",
 		"phyrexian altar",
+		"sol ring",
 		"staff of domination",
 		"the tabernacle at pendrell vale",
 		"walking ballista",
 		
 		--White
-		"cathar's crusade", --slow play
-		--"smothering tithe",
+		--"cathar's crusade", --slow play
+		"smothering tithe",
 		
 		--Blue
 		"cyclonic rift",
 		"expropriate",
+		"intruder alarm",
 		"magosi, the waterveil",
 		"narset, parter of veils", --for same reason as leovold
 		"temporal manipulation",
@@ -30,11 +34,12 @@ function onLoad(saved_data)
 		"urza, lord high artificer",
 		
 		--Black
-		"bolas's citadel",
 		"ad nauseam",
+		"bolas's citadel",
 		"demonic consultation",
 		"equisite blood",
 		"gravecrawler",
+		"k'rrik, son of yawgmoth",
 		"reassembling skeleton",
 		"tainted pact",
 		"tergrid, god of fright", --I swear it's only ran with wheels
@@ -44,13 +49,15 @@ function onLoad(saved_data)
 		"dockside extortionist",
 		"jeska's will",
 		"sneak attack",
+		"splinter twin",
 		"underworld breach",
 		
 		--Green
 		"gaea's cradle",
-		"scute swarm", --slow play
+		--"scute swarm", --slow play
 		
 		--Multicolored
+		"heliod, the radiant dawn",
 		"sen triplet",
 		"time sieve",
 
