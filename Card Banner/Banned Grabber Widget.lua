@@ -63,7 +63,7 @@ function onLoad(saved_data)
 		"sylvan tutor",
 		"vampiric tutor",
 		"worldly tutor",
-		--]]
+		]]--
 		
 		--Default commander bans
 		"ancestral recall",
