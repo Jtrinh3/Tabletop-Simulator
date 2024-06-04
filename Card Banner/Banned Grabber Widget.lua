@@ -3,6 +3,8 @@ function onLoad(saved_data)
 	searchTerm = ''
 	bannedCards = 
 		{
+		"cheatyface",
+		
 		--colorless
 		"ashnod's altar",
 		"basalt monolith",
@@ -14,13 +16,16 @@ function onLoad(saved_data)
 		"phyrexian altar",
 		"staff of domination",
 		"the tabernacle at pendrell vale",
+		"walking ballista",
 		
 		--White
 		"cathar's crusade", --slow play
+		--"smothering tithe",
 		
 		--Blue
 		"cyclonic rift",
 		"expropriate",
+		"magosi, the waterveil",
 		"narset, parter of veils", --for same reason as leovold
 		"temporal manipulation",
 		"time stretch",
@@ -51,8 +56,16 @@ function onLoad(saved_data)
 		"sen triplet",
 		"time sieve",
 
-		--free BS
-		
+		--cheap af tutors
+		--[[
+		"demonic tutor",
+		"enlightened tutor",
+		"mystical tutor",
+		"personal tutor",
+		"sylvan tutor",
+		"vampiric tutor",
+		"worldly tutor",
+		--]]
 		
 		--Default commander bans
 		"ancestral recall",
