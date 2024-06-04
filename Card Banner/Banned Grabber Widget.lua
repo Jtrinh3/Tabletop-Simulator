@@ -27,15 +27,18 @@ function onLoad(saved_data)
 		"bolas's citadel",
 		"ad nauseam",
 		"demonic consultation",
+		"equisite blood",
 		"gravecrawler",
 		"reassembling skeleton",
 		"tainted pact",
 		"tergrid, god of fright", --I swear it's only ran with wheels
 		
 		--Red
+		"aggravated assault",
 		"dockside extortionist",
-		"underworld breach",
 		"jeska's will",
+		"sneak attack",
+		"underworld breach",
 		
 		--Green
 		"gaea's cradle",
