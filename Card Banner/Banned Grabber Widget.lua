@@ -7,9 +7,7 @@ function onLoad(saved_data)
 		
 		--colorless
 		"ashnod's altar",
-		"basalt monolith",
 		"blasting station",
-		"grim monolith",
 		"jeweled lotus", 
 		"mana vault", 
 		"mana crypt",
