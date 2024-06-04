@@ -5,12 +5,14 @@ function onLoad(saved_data)
 		{
 		--colorless
 		"ashnod's altar",
+		"basalt monolith",
 		"blasting station",
 		"grim monolith",
 		"jeweled lotus", 
 		"mana vault", 
 		"mana crypt",
 		"phyrexian altar",
+		"staff of domination",
 		"the tabernacle at pendrell vale",
 		
 		--White
@@ -22,6 +24,7 @@ function onLoad(saved_data)
 		"narset, parter of veils", --for same reason as leovold
 		"temporal manipulation",
 		"time stretch",
+		"urza, lord high artificer",
 		
 		--Black
 		"bolas's citadel",
@@ -47,6 +50,9 @@ function onLoad(saved_data)
 		--Multicolored
 		"sen triplet",
 		"time sieve",
+
+		--free BS
+		
 		
 		--Default commander bans
 		"ancestral recall",
