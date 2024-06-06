@@ -8,6 +8,7 @@ function onLoad(saved_data)
 		--colorless
 		"ashnod's altar",
 		"blasting station",
+		"chrome mox",
 		"jeweled lotus",
 		"lion's eye diamond",
 		"mana vault", 
@@ -21,7 +22,6 @@ function onLoad(saved_data)
 		
 		--White
 		--"cathar's crusade", --slow play
-		"smothering tithe",
 		
 		--Blue
 		"cyclonic rift",
@@ -48,6 +48,7 @@ function onLoad(saved_data)
 		"aggravated assault",
 		"dockside extortionist",
 		"jeska's will",
+		"kiki-jiki, mirror breaker",
 		"sneak attack",
 		"splinter twin",
 		"underworld breach",
