@@ -22,6 +22,7 @@ function onLoad(saved_data)
 		
 		--White
 		--"cathar's crusade", --slow play
+		"smothering tithe",
 		
 		--Blue
 		"cyclonic rift",
