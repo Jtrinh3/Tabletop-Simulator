@@ -40,7 +40,6 @@ function onLoad(saved_data)
 		"bolas's citadel",
 		"demonic consultation",
 		"equisite blood",
-		"gravecrawler",
 		"k'rrik, son of yawgmoth",
 		"reassembling skeleton",
 		"tainted pact",
