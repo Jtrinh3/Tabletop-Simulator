@@ -30,6 +30,7 @@ function onLoad(saved_data)
 		"intruder alarm",
 		"magosi, the waterveil",
 		"narset, parter of veils", --for same reason as leovold
+		"rhystic study",
 		"temporal manipulation",
 		"time stretch",
 		"urza, lord high artificer",
