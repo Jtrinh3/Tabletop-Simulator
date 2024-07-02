@@ -9,6 +9,7 @@ function onLoad(saved_data)
 		"ashnod's altar",
 		"blasting station",
 		"chrome mox",
+		"glacial chasm",
 		"jeweled lotus",
 		"lion's eye diamond",
 		"mana vault", 
@@ -19,6 +20,7 @@ function onLoad(saved_data)
 		"staff of domination",
 		"the tabernacle at pendrell vale",
 		"walking ballista",
+		"winter orb",
 		
 		--White
 		--"cathar's crusade", --slow play
@@ -31,6 +33,7 @@ function onLoad(saved_data)
 		"magosi, the waterveil",
 		"narset, parter of veils", --for same reason as leovold
 		"rhystic study",
+		"stasis",
 		"temporal manipulation",
 		"time stretch",
 		"urza, lord high artificer",
@@ -41,7 +44,8 @@ function onLoad(saved_data)
 		"demonic consultation",
 		"equisite blood",
 		"k'rrik, son of yawgmoth",
-		"reassembling skeleton",
+		"maralen of the mornsong",
+		"opposition agent",
 		"tainted pact",
 		"tergrid, god of fright", --I swear it's only ran with wheels
 		
@@ -55,11 +59,14 @@ function onLoad(saved_data)
 		"underworld breach",
 		
 		--Green
+		"constant mist",
 		"gaea's cradle",
+		"tooth and nail",
 		--"scute swarm", --slow play
 		
 		--Multicolored
 		"heliod, the radiant dawn",
+		"nadu, winged wisdom",
 		"sen triplet",
 		"time sieve",
 
@@ -121,6 +128,7 @@ function onLoad(saved_data)
 		"upheaval",
 		"yawgmoth’s bargain"
 		}
+	
 	deckDir=-1
 	if saved_data ~= "" then
 		local loaded_data = JSON.decode(saved_data)
