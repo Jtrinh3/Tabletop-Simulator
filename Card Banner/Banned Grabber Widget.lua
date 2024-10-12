@@ -152,20 +152,6 @@ function onLoad(saved_data)
 		font_color={1,1,1,90},
 		color={0,0,0,0},
 	})
-	self.createButton({
-		input_function='getSearch',
-		function_owner=self,
-		label='Banned!',
-		value=searchTerm,
-		position={0,0.1,0},
-		width=1900,
-		height=321,
-		font_size=300,
-		font_color={1,.3,.3,1},
-		color=Color.Red,
-		tooltip='Commence the banningning',
-		alignment=3
-	})
 end
 function getSearch(obj,ply,val)
 	searchTerm=val
