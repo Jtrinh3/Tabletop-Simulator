@@ -170,7 +170,7 @@ function onLoad(saved_data)
 		width=1900,
 		height=321,
 		font_size=300,
-		font_color={1,.3,.3,1},
+		font_color={.5,.1,.1,1},
 		color=Color.Red
 		tooltip='Commence the banningning',
 		alignment=3
