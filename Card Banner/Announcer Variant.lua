@@ -161,20 +161,6 @@ function onLoad(saved_data)
 		font_color={1,1,1,90},
 		color={0,0,0,0},
 	})
-	self.createButton({
-		input_function='getSearch',
-		function_owner=self,
-		label='Banned!',
-		value=searchTerm,
-		position={0,0.1,0},
-		width=1900,
-		height=321,
-		font_size=300,
-		font_color={.5,.1,.1,1},
-		color=Color.Red,
-		tooltip='Commence the banningning',
-		alignment=3
-	})
 end
 function getSearch(obj,ply,val)
 	searchTerm=val
@@ -201,13 +187,12 @@ end
 function onCollisionEnter(co)
 	nowt=os.time()
 	if prevt==nil then prevt=0
-    printToAll("This deck is Kosher!", {r=1,g=.3,b=1})
-    end
+    		end
 	if nowt-prevt<1 then return end
 	prevt=nowt
 	deck = co.collision_object
 	if deck.type == "Deck" then
-    printToAll("Watch out! This deck contains:", {r=1,g=.3,b=1})
+    		printToAll("Watch out! This deck contains:", {r=1,g=.3,b=1})
 		--nTake= #bannedCards
 		nTaken=0	
 		for i,card in ipairs(deck.getObjects()) do
@@ -222,16 +207,18 @@ function onCollisionEnter(co)
 				        pos=pos+rig:scale(deckDir*2.4+deckDir*(nTaken-1)*1.5)
 				        pos[2]=pos[2]+nTaken*0.1
 				        deck.takeObject({index=i-nTaken,position=pos,rotation=rot})]]
-                printToAll(cardName, {r=1,g=0,b=0})
+                			printToAll(cardName, {r=1,g=1,b=1})
           
 					--get only 1 card
 				        --if nTaken==tonumber(nTake) then
 				        --	break
-					end
-				 end
+				end
 			end
-    Wait.time(function() deck.shuffle() end, 0.1, 5)
-
-    self.destruct()
+		end
+    	Wait.time(function() deck.shuffle() end, 0.1, 5)
+	if nTaken==0 then printToAll("This deck is 100% Kosher and Gluten-Free!", {r=.2,g=1,b=.4})
+	else printToAll("You dirty filth!", {r=1,g=.2,b=.2})
+		end
+	--self.destruct()
 	end
 end
