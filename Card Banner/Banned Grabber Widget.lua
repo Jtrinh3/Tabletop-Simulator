@@ -162,7 +162,7 @@ function onLoad(saved_data)
 		height=321,
 		font_size=300,
 		font_color={1,.3,.3,1},
-		color=Color.Red
+		color=Color.Red,
 		tooltip='Commence the banningning',
 		alignment=3
 	})
