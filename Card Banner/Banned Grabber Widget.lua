@@ -182,6 +182,7 @@ function onCollisionEnter(co)
 	prevt=nowt
 	deck = co.collision_object
 	if deck.type == "Deck" then
+		printToAll("Watch out! This deck contains these host banned cards:", {r=1,g=.3,b=1})
 		--nTake= #bannedCards
 		nTaken=0	
 		for i,card in ipairs(deck.getObjects()) do
@@ -196,6 +197,7 @@ function onCollisionEnter(co)
 				        pos=pos+rig:scale(deckDir*2.4+deckDir*(nTaken-1)*1.5)
 				        pos[2]=pos[2]+nTaken*0.1
 				        deck.takeObject({index=i-nTaken,position=pos,rotation=rot})
+					printToAll(cardName, {r=1,g=1,b=1})
 					--get only 1 card
 				        --if nTaken==tonumber(nTake) then
 				        --	break
@@ -203,7 +205,9 @@ function onCollisionEnter(co)
 				 end
 			end
     Wait.time(function() deck.shuffle() end, 0.1, 5)
-
-    self.destruct()
+	if nTaken==0 then printToAll("No banned cards!", {r=.2,g=1,b=.4})
+	else printToAll("BANNED!", {r=1,g=.2,b=.2})
+		end
+    --self.destruct()
 	end
 end
