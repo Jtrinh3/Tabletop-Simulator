@@ -1,4 +1,4 @@
---Idk who made this originally but im using bits and pieces from it.
+--Idk who made this originally but I'm using bits and pieces from it.
 function onLoad(saved_data)
 	searchTerm = ''
 	bannedCards = 
@@ -10,9 +10,7 @@ function onLoad(saved_data)
 		"blasting station",
 		"chrome mox",
 		"glacial chasm",
-		"jeweled lotus",
-		"lion's eye diamond",
-		"mana vault", 
+		"lion's eye diamond", 
 		"mana crypt",
 		"mox diamond",
 		"phyrexian altar",
@@ -23,11 +21,10 @@ function onLoad(saved_data)
 		"winter orb",
 		
 		--White
-		--"cathar's crusade", --slow play
+		"cathar's crusade", --slow play
 		"smothering tithe",
 		
 		--Blue
-		"cyclonic rift",
 		"expropriate",
 		"intruder alarm",
 		"magosi, the waterveil",
@@ -45,13 +42,11 @@ function onLoad(saved_data)
 		"equisite blood",
 		"k'rrik, son of yawgmoth",
 		"maralen of the mornsong",
-		"opposition agent",
 		"tainted pact",
 		"tergrid, god of fright", --I swear it's only ran with wheels
 		
 		--Red
 		"aggravated assault",
-		"dockside extortionist",
 		"jeska's will",
 		"kiki-jiki, mirror breaker",
 		"sneak attack",
@@ -62,16 +57,15 @@ function onLoad(saved_data)
 		"constant mist",
 		"gaea's cradle",
 		"tooth and nail",
-		--"scute swarm", --slow play
+		"scute swarm", --boring
 		
 		--Multicolored
 		"heliod, the radiant dawn",
-		"nadu, winged wisdom",
+		"notion thief",
 		"sen triplet",
 		"time sieve",
 
 		--cheap af tutors
-		--[[
 		"demonic tutor",
 		"enlightened tutor",
 		"mystical tutor",
@@ -79,7 +73,7 @@ function onLoad(saved_data)
 		"sylvan tutor",
 		"vampiric tutor",
 		"worldly tutor",
-		]]--
+		
 		
 		--Default commander bans
 		"ancestral recall",
@@ -90,6 +84,7 @@ function onLoad(saved_data)
 		"channel",
 		"chaos orb",
 		"coalition victory",
+		"dockside extortionist",
 		"emrakul, the aeon’s torn",
 		"erayo, soratami ascendant",
 		"falling star",
@@ -100,16 +95,19 @@ function onLoad(saved_data)
 		"griselbrand",
 		"hullbreacher",
 		"iona, shield of emeria",
+		"jeweled lotus",
 		"karakas",
 		"leovold, emissary of trest",
 		"library of alexandria",
 		"limited resources",
 		"lutri, the spellchaser",
+		"mana vault",
 		"mox emerald",
 		"mox jet",
 		"mox pearl",
 		"mox ruby",
 		"mox sapphire",
+		"nadu, winged wisdom",
 		"panoptic mirror",
 		"paradox engine",
 		"primeval titan",
