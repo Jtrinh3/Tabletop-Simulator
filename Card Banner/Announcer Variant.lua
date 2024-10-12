@@ -9,6 +9,7 @@ function onLoad(saved_data)
 		"ashnod's altar",
 		"blasting station",
 		"chrome mox",
+		"gemstone cavern",
 		"glacial chasm",
 		"lion's eye diamond", 
 		"mana crypt",
@@ -21,16 +22,17 @@ function onLoad(saved_data)
 		"winter orb",
 		
 		--White
-    "armageddon",
+    		"armageddon",
 		"cathar's crusade", --slow play
 		"smothering tithe",
-    "teferi's protection",
+    		"teferi's protection",
 		
 		--Blue
 		"expropriate",
 		"intruder alarm",
 		"magosi, the waterveil",
 		"narset, parter of veils", --for same reason as leovold
+		"reins of power",
 		"rhystic study",
 		"stasis",
 		"temporal manipulation",
@@ -49,11 +51,12 @@ function onLoad(saved_data)
 		
 		--Red
 		"aggravated assault",
-    "insurrection",
+		"decree of annihilation",
+    		"insurrection",
 		"jeska's will",
 		"kiki-jiki, mirror breaker",
 		"mob rule",
-    "sneak attack",
+    		"sneak attack",
 		"splinter twin",
 		"underworld breach",
 		
@@ -64,7 +67,7 @@ function onLoad(saved_data)
 		"scute swarm", --boring
 		
 		--Multicolored
-    "inkshield"
+    		"inkshield"
 		"heliod, the radiant dawn",
 		"notion thief",
 		"sen triplet",
@@ -73,6 +76,7 @@ function onLoad(saved_data)
 		--cheap af tutors
 		"demonic tutor",
 		"enlightened tutor",
+		"imperial seal",
 		"mystical tutor",
 		"personal tutor",
 		"sylvan tutor",
