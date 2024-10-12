@@ -67,7 +67,7 @@ function onLoad(saved_data)
 		"scute swarm", --boring
 		
 		--Multicolored
-    		"inkshield"
+    		"inkshield",
 		"heliod, the radiant dawn",
 		"notion thief",
 		"sen triplet",
@@ -171,7 +171,7 @@ function onLoad(saved_data)
 		height=321,
 		font_size=300,
 		font_color={.5,.1,.1,1},
-		color=Color.Red
+		color=Color.Red,
 		tooltip='Commence the banningning',
 		alignment=3
 	})
