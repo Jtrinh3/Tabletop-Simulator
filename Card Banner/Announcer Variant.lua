@@ -11,39 +11,61 @@ function onLoad(saved_data)
 		"chrome mox",
 		"gemstone cavern",
 		"glacial chasm",
+		"grim monolith",
 		"lion's eye diamond", 
 		"mana crypt",
+		"mox amber",
 		"mox diamond",
 		"phyrexian altar",
 		"sol ring",
 		"staff of domination",
+		"the one ring",
 		"the tabernacle at pendrell vale",
 		"walking ballista",
 		"winter orb",
 		
 		--White
     		"armageddon",
+		"catastrophe",
 		"cathar's crusade", --slow play
+		"ravages of war",
+		"silence",
 		"smothering tithe",
     		"teferi's protection",
 		
 		--Blue
+		"alrund's epiphany",
+		"cyclonic rift",
 		"expropriate",
+		"force of negation",
+		"force of will",
+		"ichormoon gauntlet",
 		"intruder alarm",
+		"lighthouse chronologist",
 		"magosi, the waterveil",
+		"mana drain",
+		"mystic remora",
 		"narset, parter of veils", --for same reason as leovold
+		"nexus of fate",
+		"notorious throng",
+		"part the waterveil",
 		"reins of power",
 		"rhystic study",
+		"sage of hours",
 		"stasis",
 		"temporal manipulation",
+		"timestream navigator",
 		"time stretch",
+		"time warp",
 		"urza, lord high artificer",
 		
 		--Black
 		"ad nauseam",
 		"bolas's citadel",
+		"cabal coffers",
 		"demonic consultation",
 		"equisite blood",
+		"gonti's aether heart",
 		"k'rrik, son of yawgmoth",
 		"maralen of the mornsong",
 		"tainted pact",
@@ -51,26 +73,36 @@ function onLoad(saved_data)
 		
 		--Red
 		"aggravated assault",
+		"boom // bust",
 		"decree of annihilation",
+		"devastation",
+		"final fortune",
     		"insurrection",
 		"jeska's will",
+		"jokulhaups",
+		"last chance",
 		"kiki-jiki, mirror breaker",
 		"mob rule",
+		"obliterate",
     		"sneak attack",
 		"splinter twin",
 		"underworld breach",
+		"warrior's oath",
 		
 		--Green
 		"constant mist",
 		"gaea's cradle",
 		"tooth and nail",
 		"scute swarm", --boring
+		"spore frog",
 		
 		--Multicolored
+		"chance for glory",
     		"inkshield",
 		"heliod, the radiant dawn",
 		"notion thief",
 		"sen triplet",
+		"stitch in time",
 		"time sieve",
 
 		--cheap af tutors
