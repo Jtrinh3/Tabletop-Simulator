@@ -13,7 +13,7 @@ function onLoad(saved_data)
 		"glacial chasm",
 		"grim monolith",
 		"lion's eye diamond", 
-		"mana crypt",
+		"mana vault",
 		"mox amber",
 		"mox diamond",
 		"phyrexian altar",
@@ -25,11 +25,9 @@ function onLoad(saved_data)
 		"winter orb",
 		
 		--White
-    		"armageddon",
-		"catastrophe",
-		"cathar's crusade", --slow play
-		"ravages of war",
-		"silence",
+		"drannith magistrate",
+		"enlightened tutor
+		"humility",
 		"smothering tithe",
     		"teferi's protection",
 		
